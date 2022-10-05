@@ -1,11 +1,16 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import {Camera, useCameraDevices} from 'react-native-vision-camera';
 
 const App = () => {
+  const devices = useCameraDevices();
+  const device = devices.back;
+
+  if (device == null) {
+    return <Text>Loading...</Text>;
+  }
   return (
-    <View>
-      <Text>Hello ubu!</Text>
-    </View>
+    <Camera style={StyleSheet.absoluteFill} device={device} isActive={true} />
   );
 };
 
