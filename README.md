@@ -55,4 +55,14 @@
     ],
   ],
   ```
+- Plug your device, or create a virtual one
+- Run the Metro server (better reset cache):
+```bash
+npx react-native start --reset-cache
+```
+- Build the App:
+```bash
+npx react-native run-android
+```
+- Accept authorizations on device
 - Now you can use your scanner
