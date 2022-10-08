@@ -1,5 +1,11 @@
 # React Native QR-code Scanner
 
+## How to use
+
+This repo contains a ready-to-use forlder, you can clone it and go directly to step "Run the Metro server..." below. Or you can follow step by step to integrate it into an existing project.
+
+## Steps to reproduce the same
+
 - Initialize a react native app based on a typescript template:
   ```bash
   npx react-native init App --template react-native-template-typescript
